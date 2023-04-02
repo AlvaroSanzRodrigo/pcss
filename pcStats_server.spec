@@ -8,7 +8,7 @@ a = Analysis(
     ['pcStats_server.py'],
     pathex=[],
     binaries=[],
-    datas=[('OpenHardwareMonitorLib.dll', '.')],
+    datas=[('OpenHardwareMonitorLib.dll', '.'), ('icon.png', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -41,4 +41,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['icon.ico'],
 )
